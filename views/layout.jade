@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    //- webpackでバンドルされたクライアントサイドの
+    //- JavaScript読み込み
+    script(src="/javascripts/bundle.js")
